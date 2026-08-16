@@ -68,8 +68,25 @@
     margin: 1.5rem 0;
     font-size: 0.98rem;
   }
-  footer {
+  .navigation-link {
+    text-align: center;
     margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  .navigation-link a {
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .navigation-link a:hover {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  footer {
+    margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
     color: var(--muted);
@@ -102,7 +119,7 @@
   <p>The App displays advertisements served by Google AdMob unless you purchase "Remove Ads". Ad content is selected and delivered by Google; we are not responsible for the content of individual ads.</p>
 
   <h2>5. Your Data</h2>
-  <p>Your game progress is stored locally on your device. We do not host or back up your save data — if you uninstall the App, or use "Reset All Progress", that data is gone. See the <a href="privacy-policy.html">Privacy Policy</a> for details on what limited data third-party services (ads, purchases) may collect.</p>
+  <p>Your game progress is stored locally on your device. We do not host or back up your save data — if you uninstall the App, or use "Reset All Progress", that data is gone. See the <a href="index.html">Privacy Policy</a> for details on what limited data third-party services (ads, purchases) may collect.</p>
 
   <h2>6. Acceptable Use</h2>
   <p>You agree not to:</p>
@@ -129,6 +146,10 @@
 
   <h2>12. Contact Us</h2>
   <p>If you have questions about these Terms, contact us at: <a href="mailto:altevilstudious@gmail.com">altevilstudious@gmail.com</a></p>
+
+  <div class="navigation-link">
+    <a href="index.html">View Privacy Policy</a>
+  </div>
 
   <footer>The Cipher Gazette</footer>
 </div>
